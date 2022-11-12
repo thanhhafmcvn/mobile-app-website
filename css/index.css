@@ -1,6 +1,13 @@
 /** @format */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 .main-container {
   margin: auto;
   display: flex;
@@ -121,14 +128,16 @@ i {
 .food-table__main-content__row {
   margin-bottom: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: row;
 }
 .food-table__main-content__row__image {
   object-fit: cover;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .customer-feedback__header__heading {
@@ -153,15 +162,13 @@ i {
   height: 10px;
 }
 .customer-feedback__main-content {
-  padding: 50px;
-  margin-top: 10px;
+  margin-top: 40px;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
 }
 .customer-feedback__main-content__customer {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -185,64 +192,92 @@ i {
   font-size: 20px;
 }
 .customer-feedback__main-content__customer__feedback > p {
-    margin: auto;
+  margin: auto;
   margin-bottom: 10px;
   margin-top: 5px;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
 }
-@media screen and (min-width: 1920px) {
 
-.main-content__right-block__text-area__content {
-  font-size: 27px;
+.footer {
+  margin-top: 30px;
+  background-color: #dcdfe3;
+}
+footer {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__contact-information {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.food-table__main-content__row__image {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.header__heading {
-  font-size: 70px;
-}
-.header__red-rectangle {
-  width: 25vw;
-}
-.food-table__header__heading {
-  font-size: 70px;
-}
-.customer-feedback__header__heading {
-  font-size: 70px;
-}
-.customer-feedback__header__green-rectangle {
-  width: 60vw;
-}
-  .customer-feedback__main-content__customer__feedback > h1 {
-  margin: auto;
-  margin-bottom: 10px;
-  margin-top: 5px;
-  font-family: "Montserrat";
-  font-weight: 700;
-  font-size: 25px;
-}
-.customer-feedback__main-content__customer__feedback > p {
-    margin: auto;
-  margin-bottom: 10px;
-  margin-top: 5px;
-  font-family: "Montserrat";
   font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.footer__contact-information > i {
   font-size: 22px;
 }
-.install-buttons__button {
+.footer__contact-information > i {
+  font-size: 22px;
+}
+@media screen and (min-width: 1920px) {
+  .main-content__right-block__text-area__content {
+    font-size: 27px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .food-table__main-content__row__image {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .header__heading {
+    font-size: 70px;
+  }
+  .header__red-rectangle {
+    width: 25vw;
+  }
+  .food-table__header__heading {
+    font-size: 70px;
+  }
+  .customer-feedback__header__heading {
+    font-size: 70px;
+  }
+  .customer-feedback__header__green-rectangle {
+    width: 60vw;
+  }
+  .customer-feedback__main-content__customer__feedback > h1 {
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .customer-feedback__main-content__customer__feedback > p {
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 22px;
+  }
+  .install-buttons__button {
     font-size: 1rem;
-}
-.install-buttons__button:hover {
-
-  font-size: 1.125rem;
-  padding: 10px;
-
-}
+  }
+  .install-buttons__button:hover {
+    font-size: 1.125rem;
+    padding: 10px;
+  }
+  .food-table__main-content__row__image {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .footer {
+    font-size: 25px;
+  }
 }
