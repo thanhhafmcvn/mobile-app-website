@@ -15,6 +15,15 @@
   </head>
 
   <body>
+    <!-- ------------Navigation bar-------------- -->
+    <div class="navigation-bar">
+      <a href="#food"  class="navigation-bar__text" onclick="scrollToFood()">Food</a>
+      <a href="#feedback" class="navigation-bar__text">Feedback</a>
+      <a href="#aboutus" class="navigation-bar__text">About us</a>
+      <a href="#" class="navigation-bar__icon"
+        ><i class="fa-solid fa-magnifying-glass"></i
+      ></a>
+    </div>
     <div class="main-container">
       <!-- -----------------HEADER----------------- -->
       <div class="header">
@@ -57,7 +66,7 @@
         </div>
       </div>
       <!-- -----------------FOOD TABLE----------------- -->
-      <div class="food-table">
+      <div class="food-table" id="food" >
         <div class="food-table__header">
           <h1 class="food-table__header__heading">Food</h1>
           <div class="food-table__header__blue-rectangle"></div>
@@ -108,7 +117,7 @@
         </div>
       </div>
       <!-- -----------------FEEDBACK FROM CUSTOMERS----------------- -->
-      <div class="customer-feedback">
+      <div class="customer-feedback" id="feedback">
         <div class="customer-feedback__header">
           <h1 class="customer-feedback__header__heading">
             Feedback from customers
@@ -149,7 +158,7 @@
         </div>
       </div>
       <!-- -----------------FOOTER----------------- -->
-      <div class="footer">
+      <div class="footer" id="aboutus">
         <footer>
           <div class="footer__left-block">
             <h4 class="footer__contact-information">
@@ -182,4 +191,5 @@
       </div>
     </div>
   </body>
+  <script src="./js/index.js"></script>
 </html>
